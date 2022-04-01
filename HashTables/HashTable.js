@@ -46,10 +46,3 @@ class HashTable {
         return keysArray;
     }
 };
-
-const myHashTable = new HashTable(50);
-myHashTable.set('grapes', 10000);
-myHashTable.set('apples', 54);
-myHashTable.set('oranges', 2);
-// console.log(myHashTable.get('grapes'));
-console.log(myHashTable.keys());

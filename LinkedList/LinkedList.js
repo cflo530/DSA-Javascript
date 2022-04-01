@@ -81,12 +81,3 @@ class LinkedList {
         return this.printList();
     }
 };
-
-const linkedList = new LinkedList(10);
-linkedList.append(5);
-linkedList.append(16);
-linkedList.prepend(3);
-linkedList.insert(2, 99);
-linkedList.insert(20, 100);
-linkedList.remove(2);
-console.log(linkedList.printList());

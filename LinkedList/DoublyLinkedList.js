@@ -107,13 +107,3 @@ class DoublyLinkedList {
         return this;
     }
 };
-
-const doubly = new DoublyLinkedList(10);
-doubly.append(5);
-doubly.append(16);
-doubly.prepend(1);
-doubly.insert(0, 0);
-// doubly.insert(20, 100);
-doubly.remove(2);
-console.log(doubly.printList());
-console.log(doubly.reverse().printList());

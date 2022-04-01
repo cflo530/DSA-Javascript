@@ -6,7 +6,7 @@ class Node {
     }
 };
 
-class Stack {
+class StackLL {
     constructor() {
         this.top = null;
         this.bottom = null;
@@ -43,12 +43,20 @@ class Stack {
     }
 }
 
-const myStack = new Stack();
-myStack.push(4);
-myStack.push(3);
-myStack.push(2);
-myStack.pop();
-myStack.pop();
-myStack.pop();
-console.log(myStack);
-// console.log(myStack.peek());
+// Stack Array Implementation
+class StackArray {
+    constructor() {
+        this.array = [];
+    }
+    peek() {
+        return this.array[this.array.length - 1];
+    }
+    push(value) {
+        this.array.push(value);
+        return this;
+    }
+    pop() {
+        this.array.pop();
+        return this;
+    }
+}
